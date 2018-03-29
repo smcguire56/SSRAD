@@ -6,8 +6,11 @@
 <html>
 <head>
 
+<style>
+
+</style>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Show ships</title>
+<title>Insert title here</title>
 </head>
 <body>
 	<h1>Ships</h1>
@@ -16,7 +19,7 @@
 			<th>Name</th>
 			<th>Passengers</th>
 			<th>Cost</th>
-			<th>Length(Meters)</th>
+			<th>Length(Metres)</th>
 			<th>Shipping Company</th>
 		</tr>
 
@@ -27,7 +30,7 @@
 				<td>${ship.passengers}</td>
 				<td>${ship.cost}</td>
 				<td>${ship.metres}</td>
-				<td>${ship.shippingCompany.name}</td>
+				<td>${ship.shippingCompany}</td>
 			</tr>
 
 		</c:forEach>
