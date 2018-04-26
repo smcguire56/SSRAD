@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -9,34 +8,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="/css/style.css" rel="stylesheet"></link>
 
-<title>Show ships</title>
+<title>Error</title>
 </head>
 <body>
-	<h1>Showing Ships</h1>
-	<table>
-		<tr>
-			<th>Name</th>
-			<th>Passengers</th>
-			<th>Cost</th>
-			<th>Length(Meters)</th>
-			<th>Shipping Company</th>
-		</tr>
-
-		<c:forEach items="${ships}" var="ship">
-
-			<tr>
-				<td>${ship.name}</td>
-				<td>${ship.passengers}</td>
-				<td>${ship.cost}</td>
-				<td>${ship.metres}</td>
-				<td>${ship.shippingCompany.name}</td>
-			</tr>
-
-		</c:forEach>
-	</table>
-
-	<br>
+	<h1>Error Creating the Order</h1>
+	<h2>Shipping Company balance is less than the cost of ship - Cannot place order</h2>
 	<a href="/index.html">Home</a>
 </body>
 </html>
-

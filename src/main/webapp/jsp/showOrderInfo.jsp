@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -9,34 +8,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="/css/style.css" rel="stylesheet"></link>
 
-<title>Show ships</title>
+<title>Show Order Info</title>
 </head>
 <body>
-	<h1>Showing Ships</h1>
+	<h1>Show Orders</h1>
 	<table>
 		<tr>
-			<th>Name</th>
-			<th>Passengers</th>
-			<th>Cost</th>
-			<th>Length(Meters)</th>
-			<th>Shipping Company</th>
+			<th>Order Number</th>
+			<th>Shipping Company Name</th>
+			<th>Ship Name</th>
+			<th>Order Date</th>
 		</tr>
-
-		<c:forEach items="${ships}" var="ship">
-
-			<tr>
-				<td>${ship.name}</td>
-				<td>${ship.passengers}</td>
-				<td>${ship.cost}</td>
-				<td>${ship.metres}</td>
-				<td>${ship.shippingCompany.name}</td>
-			</tr>
-
+		<c:forEach items="${orderInfos}" var="orderInfo">
+			<tr> 
+		    	<td>${orderInfo.oid}</td>
+		    	<td>${orderInfo.shippingCompany.name}</td>
+		    	<td>${orderInfo.ship.name}</td>
+		    	<td>${orderInfo.date}</td>
+	   		</tr>
 		</c:forEach>
 	</table>
-
-	<br>
-	<a href="/index.html">Home</a>
+<a href="/index.html">Home</a>
 </body>
 </html>
-

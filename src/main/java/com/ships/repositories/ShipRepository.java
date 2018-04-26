@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.ships.model.Ship;
 
 @Repository
-public interface shipInterface extends CrudRepository<Ship, Long>{
+public interface ShipRepository  extends CrudRepository<Ship, Long>{
+
 
 }
