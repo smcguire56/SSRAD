@@ -20,18 +20,15 @@
 			<th>Ships</th>
 		</tr>
 
-		<c:forEach items="${ships}" var="ship">
+		<c:forEach items="${shippingCompanies}" var="ship">
 
 			<tr>
 			<!-- shipping_company (scid, balance, home_port, name) -->
 			<!-- sid, cost, name, passengers, metres, scid -->
-				<td>${shipping_company.name}</td>
-				<td>${shipping_company.home_port}</td>
-				<td>${shipping_company.balance}</td>
-				
 				<td>${ship.name}</td>
-				<td>${ship.metres}</td>
-				<td>${ship.cost}</td>
+				<td>${ship.homePort}</td>
+				<td>${ship.balance}</td>
+				<td>${ship.ships}</td>
 			</tr>
 
 		</c:forEach>

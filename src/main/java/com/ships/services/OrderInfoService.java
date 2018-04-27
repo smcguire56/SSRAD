@@ -31,19 +31,21 @@ public class OrderInfoService {
 		return (List<OrderInfo>) orderInfoRepository.findAll();
 	}
 
-	/*
-	 * public OrderInfo save(OrderInfo orderInfo) {
-	 * 
-	 * setCurrentDate(orderInfo);
-	 * 
-	 * ship = shipRepository.findOne(orderInfo.getShip().getSid()); shippingCompany
-	 * = shipCompanyRepository.findOne(orderInfo.getShippingCompany().getScid());
-	 * 
-	 * ship.setShippingCompany(shippingCompany); return
-	 * orderInfoRepository.save(orderInfo); }
-	 * 
-	 * private void setCurrentDate(OrderInfo orderInfo) { DateTimeFormatter
-	 * dateFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd"); LocalDate now =
-	 * LocalDate.now(); orderInfo.setDate(dateFormat.format(now)); }
-	 */
+
+//	  public OrderInfo save(OrderInfo orderInfo) {
+//	  
+//	  setCurrentDate(orderInfo);
+//	  
+//	  ship = shipRepository.findOne(orderInfo.getShip().getSid()); shippingCompany
+//	  = shipCompanyRepository.findOne(orderInfo.getShippingCompany().getScid());
+//	  
+//	  ship.setShippingCompany(shippingCompany); return
+//	  orderInfoRepository.save(orderInfo); }
+//	  
+//	  private void setCurrentDate(OrderInfo orderInfo) { DateTimeFormatter
+//	  dateFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd"); LocalDate now =
+//	  LocalDate.now(); orderInfo.setDate(dateFormat.format(now));
+//	  
+//	  }
+//	 
 }
